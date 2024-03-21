@@ -19,8 +19,38 @@
                 - li, class item(s), a*3: Home, About, Projects 
                 - button: Get in Touch
     -->
-    
 
+    <header>
+
+        <div class="flex-container-1">
+
+            <h1 class="heading-1">Rosa Tome</h1>
+
+        </div>
+
+        <div>
+            <ul class="flex-container-2">
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <button class="get-in-touch-button">Get in Touch</button>
+
+
+    </header>
 
       <!-- 
         main:
@@ -34,22 +64,90 @@
 
             - section
                 - div, class container, flex 
-                - img  
+                    - img  
 
-                - div, class fcontainer, flex 
+                - div, class container, flex 
                     - h4, class heading(4): About Me
                     - p
 
             - section
-                - div, class grid-container
+                - div, class container, flex
                     - h4, class heading(4): Technical Skills
                 - div, class grid-container
                     - p
-                - div, class grid-container
-                    - div, class grid-item(s)*9: Git, HTML5, CSS3, JavaScript, SCSS, BEM, React, Java, Spring Boot
+                - div, class container, flex
+                    - div, class flex-item(s)*9: Git, HTML5, CSS3, JavaScript, SCSS, BEM, React, Java, Spring Boot
                         - img
-                        - p
+                
        -->
+
+    <main>
+
+        <section>
+
+            <div class="flex-container-2">
+
+                <h2 class="heading-2">🩷 Hey! I'm Rosa Tome</h2>
+
+                <h3 class="heading-3">A Junior Software Engineer based in the UK</h3>
+
+            </div>
+
+            <div class="flex-container-3">
+
+                <img src="./images/person_on_laptop.png"alt="picture_of_person_on_laptop">
+
+            </div>
+
+
+        </section>
+
+        <section>
+
+            <div class="flex-container-4">
+
+                <img src="./images/profile_pic.png" alt="profile_pic">
+
+            </div>
+
+            <div class="flex-container-5">
+
+                <h4 class="heading-4">About Me</h4>
+
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas, nisi minima officia consequuntur ad totam culpa! Ducimus, architecto rerum.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="flex-container-6">
+
+                <h4 class="heading-4">Technical Skills</h4>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas.
+                </p>
+
+            </div>
+
+            <div class="flex-contrainer-7">
+
+                <div class="flex-items">
+                    <img src="./images/git.png" alt="Git">
+                    <img src="./images/html5.png" alt="HTML5">
+                    <img src="./images/css3.png" alt="CSS3">
+                    <img src="./images/js.png" alt="JavaScript">
+                    <img src="./images/scss.png" alt="SCSS">
+                    <img src="./images/bem.png" alt="BEM">
+                    <img src="./images/react.png" alt="React">
+                    <img src="./images/java.png" alt="Java">
+                    <img src="./images/springboot.png" alt="Spring Boot">                    
+                </div>
+
+            </div>
+
+        </section>
 
     <!-- 
         article:
@@ -59,13 +157,100 @@
             - div, class grid container 
                 - div, class grid-card(s)*6
                     - img
-                    - h4
                     - h5
+                    - h6
                     - p
                     - a*2: Code </>, Preview </>
      -->
-    
-    <!-- 
+
+    <article>
+        
+        <section>
+
+            <div class="grid-container-1">
+
+                <h4 class="heading-4">My Projects</h4>
+
+            </div>
+
+            <div class="grid-container-2">
+
+                <div class="grid-card">
+                    
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+
+                </div>
+
+                <div class="grid-card">
+
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+                    
+                </div>
+
+                <div class="grid-card">
+
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+                    
+                </div>
+
+                <div class="grid-card">
+                    
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+
+                </div>
+
+                <div class="grid-card">
+
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+                
+                </div>
+
+                <div class="grid-card">
+                    
+                    <img src="./images/card.png" alt="client_project">
+                    <h5>React</h5>
+                    <h6>Client Project</h6>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="code-button">Code &lt;/&gt;</button>
+                    <button class="preview-button">Preview &lt;/&gt;</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </article>
+
+    </main>
+
+
+      <!-- 
         Footer:
             - div, class container, flex 
                 - a: email
@@ -73,6 +258,31 @@
                 - a, img
      -->
 
+     <footer>
+
+        <div class="flex-contrainer-8"></div>
+        <a href="mailto:example@example.com">rosalinda_tome@hotmail.com</a>
+
+        <div>
+
+            <ul class="flex-contrainer-9">
+                
+                <li>
+                    <a href=""><img src="./images/cv.png" alt="CV"></a>
+
+                <li>
+                    <a href="www.github.com/rosaTome"><img src="./images/github.png" alt="GitHub"></a>
+                </li>
+
+                <li>
+                    <a href=""><img src="./images/linkedin.png" alt="Linkedin"></a>
+                </li>
+
+            </ul>
+
+        </div>
+
+     </footer>
 
 </body>
 </html>
