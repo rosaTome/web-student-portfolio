@@ -2,55 +2,43 @@
 <html lang="en">
     
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Student Portfolio</title>
     <link rel="stylesheet" href="./styles.css" class="css">
+
 </head>
 
 <body>
 
-    <!-- 
-    header:
-        - div, class flex-container 
-            - h1, class heading, name 
-        - div, flex-class container, flex 
-            - ul, flex
-                - li, class item(s), a*3: Home, About, Projects 
-                - button: Get in Touch
-    -->
-
-    <header>
-
-        <div class="flex-container-1">
-
-            <h1 class="heading-1">Rosa Tome</h1>
-
-        </div>
-
-        <div>
-            <ul class="flex-container-2">
-
-                <li>
-                    <a href="#">Home</a>
-                </li>
-
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <button class="get-in-touch-button">Get in Touch</button>
-
+    <header class="header__container">
+        
+        <h1 class="header__heading">Rosa Tome</h1>
 
     </header>
+
+    <nav class="nav__container">
+    
+        <ul>
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Projects</a>
+            </li>
+
+        </ul>
+
+        <button class="nav__contact nav__contact--hover">Get in Touch</button>
+
+    </nav>
 
       <!-- 
         main:
@@ -78,7 +66,6 @@
                 - div, class container, flex
                     - div, class flex-item(s)*9: Git, HTML5, CSS3, JavaScript, SCSS, BEM, React, Java, Spring Boot
                         - img
-                
        -->
 
     <main>
@@ -98,7 +85,6 @@
                 <img src="./images/person_on_laptop.png"alt="picture_of_person_on_laptop">
 
             </div>
-
 
         </section>
 
@@ -134,6 +120,7 @@
             <div class="flex-contrainer-7">
 
                 <div class="flex-items">
+
                     <img src="./images/git.png" alt="Git">
                     <img src="./images/html5.png" alt="HTML5">
                     <img src="./images/css3.png" alt="CSS3">
@@ -142,7 +129,8 @@
                     <img src="./images/bem.png" alt="BEM">
                     <img src="./images/react.png" alt="React">
                     <img src="./images/java.png" alt="Java">
-                    <img src="./images/springboot.png" alt="Spring Boot">                    
+                    <img src="./images/springboot.png" alt="Spring Boot"> 
+
                 </div>
 
             </div>
@@ -249,7 +237,6 @@
 
     </main>
 
-
       <!-- 
         Footer:
             - div, class container, flex 
@@ -257,7 +244,7 @@
             - div, class container, flex 
                 - a, img
      -->
-
+     
      <footer>
 
         <div class="flex-contrainer-8"></div>
@@ -285,4 +272,5 @@
      </footer>
 
 </body>
+
 </html>
