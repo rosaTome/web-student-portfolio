@@ -2,287 +2,239 @@
 <html lang="en">
     
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Student Portfolio</title>
     <link rel="stylesheet" href="./styles.css" class="css">
+
 </head>
 
 <body>
 
-    <!-- 
-    header:
-        - div, class flex-container 
-            - h1, class heading, name 
-        - div, flex-class container, flex 
-            - ul, flex
-                - li, class item(s), a*3: Home, About, Projects 
-                - button: Get in Touch
-    -->
-
-    <header>
-
-        <div class="flex-container-1">
-
-            <h1 class="heading-1">Rosa Tome</h1>
-
-        </div>
-
-        <div>
-            <ul class="flex-container-2">
-
-                <li>
-                    <a href="#">Home</a>
-                </li>
-
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <button class="get-in-touch-button">Get in Touch</button>
-
+    <header class="header">
+        
+        <!-- <h1 class="header__heading">Rosa Tome</h1> -->
 
     </header>
 
-      <!-- 
-        main:
-            - section
-                - div, class container, flex 
-                    - h2, class heading(2): emoji, Hey! I'm Rosa Tomé
-                    - h3, class heading(3): A Junior Software Developer based in the UK
-                
-                - div, class container, flex
-                    - img 
+    <nav class="nav">
+    
+        <!-- <ul>
 
-            - section
-                - div, class container, flex 
-                    - img  
+            <li>
+                <a href="#">Home</a>
+            </li>
 
-                - div, class container, flex 
-                    - h4, class heading(4): About Me
-                    - p
+            <li>
+                <a href="#">About</a>
+            </li>
 
-            - section
-                - div, class container, flex
-                    - h4, class heading(4): Technical Skills
-                - div, class grid-container
-                    - p
-                - div, class container, flex
-                    - div, class flex-item(s)*9: Git, HTML5, CSS3, JavaScript, SCSS, BEM, React, Java, Spring Boot
-                        - img
-                
-       -->
+            <li>
+                <a href="#">Projects</a>
+            </li>
+
+        </ul> -->
+
+        <!-- <button class="nav__contact nav__contact--hover">Get in Touch</button> -->
+
+    </nav>
 
     <main>
 
-        <section>
+        <section class="section">
 
-            <div class="flex-container-2">
+            <div class="section__containers">
 
-                <h2 class="heading-2">🩷 Hey! I'm Rosa Tome</h2>
-
-                <h3 class="heading-3">A Junior Software Engineer based in the UK</h3>
+                <!-- <h2 class="section__heading--name">🩷 Hey! I'm Rosa Tome</h2> -->
 
             </div>
 
-            <div class="flex-container-3">
+            <div class="section__containers">
 
-                <img src="./images/person_on_laptop.png"alt="picture_of_person_on_laptop">
-
-            </div>
-
-
-        </section>
-
-        <section>
-
-            <div class="flex-container-4">
-
-                <img src="./images/profile_pic.png" alt="profile_pic">
+                <!-- <h3 class="section__heading--role">A Junior Software Engineer based in the UK</h3> -->
 
             </div>
 
-            <div class="flex-container-5">
+            <div class="section__containers">
 
-                <h4 class="heading-4">About Me</h4>
-
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas, nisi minima officia consequuntur ad totam culpa! Ducimus, architecto rerum.
-                </p>
+                <!-- <img class="section__img" src="./images/person_on_laptop.png"alt="picture_of_person_on_laptop"> -->
 
             </div>
 
         </section>
 
-        <section>
+        <article class="article">
 
-            <div class="flex-container-6">
+            <div class="article__containers">
 
-                <h4 class="heading-4">Technical Skills</h4>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas.
-                </p>
+                <!-- <h4 class="article__heading">About Me</h4> -->
 
             </div>
 
-            <div class="flex-contrainer-7">
+            <div class="article__containers">
 
-                <div class="flex-items">
-                    <img src="./images/git.png" alt="Git">
-                    <img src="./images/html5.png" alt="HTML5">
-                    <img src="./images/css3.png" alt="CSS3">
-                    <img src="./images/js.png" alt="JavaScript">
-                    <img src="./images/scss.png" alt="SCSS">
-                    <img src="./images/bem.png" alt="BEM">
-                    <img src="./images/react.png" alt="React">
-                    <img src="./images/java.png" alt="Java">
-                    <img src="./images/springboot.png" alt="Spring Boot">                    
-                </div>
+                <!-- <img class="article__img" src="./images/profile_pic.png" alt="profile_pic"> -->
 
             </div>
 
-        </section>
+            <div class="article__containers">
 
-    <!-- 
-        article:
-            - section 
-            - div, class grid container 
-                - h4, class heading(4): My Projects
-            - div, class grid container 
-                - div, class grid-card(s)*6
-                    - img
-                    - h5
-                    - h6
-                    - p
-                    - a*2: Code </>, Preview </>
-     -->
+                <!-- <p class="article__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas, nisi minima officia consequuntur ad totam culpa! Ducimus, architecto rerum. 
+                </p> -->
 
-    <article>
+            </div>
         
-        <section>
+        </article>
 
-            <div class="grid-container-1">
+        <figure class="figure">
 
-                <h4 class="heading-4">My Projects</h4>
+            <div class="figure__containers">
 
-            </div>
-
-            <div class="grid-container-2">
-
-                <div class="grid-card">
-                    
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-
-                </div>
-
-                <div class="grid-card">
-
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-                    
-                </div>
-
-                <div class="grid-card">
-
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-                    
-                </div>
-
-                <div class="grid-card">
-                    
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-
-                </div>
-
-                <div class="grid-card">
-
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-                
-                </div>
-
-                <div class="grid-card">
-                    
-                    <img src="./images/card.png" alt="client_project">
-                    <h5>React</h5>
-                    <h6>Client Project</h6>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
-                    <button class="code-button">Code &lt;/&gt;</button>
-                    <button class="preview-button">Preview &lt;/&gt;</button>
-
-                </div>
+                <!-- <h4 class="figure__heading">Technical Skills</h4> -->
 
             </div>
 
-        </section>
+            <div class="figure__containers">
 
-    </article>
+                <!-- <p class="figure__paragraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam error odio ipsum labore quae numquam, laudantium sit optio quas. 
+                </p> -->
+
+            </div>
+
+            <div class="figure__containers">
+
+                <!-- <img class="figure__img" src="./images/git.png" alt="Git">
+                <img class="figure__img" src="./images/html5.png" alt="HTML5">
+                <img class="figure__img" src="./images/css3.png" alt="CSS3">
+                <img class="figure__img" src="./images/js.png" alt="JavaScript">
+                <img class="figure__img" src="./images/scss.png" alt="SCSS">
+                <img class="figure__img" src="./images/bem.png" alt="BEM">
+                <img class="figure__img" src="./images/react.png" alt="React">
+                <img class="figure__img" src="./images/java.png" alt="Java">
+                <img class="figure__img" src="./images/springboot.png" alt="Spring Boot">  -->
+            
+            </div>
+
+        </figure>
+
+        <aside class="aside">
+            
+            <div class="aside__containers">
+
+                <!-- <h4 class="aside__heading">My Projects</h4> -->
+
+            </div>
+
+            <div class="aside__containers">
+
+                <div class="aside__card">
+                    
+                    <!-- <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+                <div class="aside__card">
+                    
+                    <!-- <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+                <div class="aside__card">
+<!--                     
+                    <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+                <div class="aside__card">
+                    
+                    <!-- <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+                <div class="aside__card">
+                    
+                    <!-- <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+                <div class="aside__card">
+                    
+                    <!-- <img class="aside__img" src="./images/card.png" alt="client_project">
+                    <h5 class="aside__skill">React</h5>
+                    <h6 class="aside__title">Client Project</h6>
+                    <p class="aside__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi ipsa quisquam dolore temporibus praesentium modi omnis nulla vitae totam repellendus consequatur corporis</p>
+                    <button class="aside__button aside__button--code">Code &lt;/&gt;</button>
+                    <button class="aside__button aside__button--preview">Preview &lt;/&gt;</button> -->
+
+                </div>
+
+            </div>
+
+        </aside>
 
     </main>
 
+    <footer class="footer">
 
-      <!-- 
-        Footer:
-            - div, class container, flex 
-                - a: email
-            - div, class container, flex 
-                - a, img
-     -->
+        <div class="footer__contrainers">
 
-     <footer>
-
-        <div class="flex-contrainer-8"></div>
-        <a href="mailto:example@example.com">rosalinda_tome@hotmail.com</a>
-
-        <div>
-
-            <ul class="flex-contrainer-9">
-                
-                <li>
-                    <a href=""><img src="./images/cv.png" alt="CV"></a>
-
-                <li>
-                    <a href="www.github.com/rosaTome"><img src="./images/github.png" alt="GitHub"></a>
-                </li>
-
-                <li>
-                    <a href=""><img src="./images/linkedin.png" alt="Linkedin"></a>
-                </li>
-
-            </ul>
+            <!-- <a class="footer__link" href="mailto:example@example.com">rosalinda_tome@hotmail.com</a> -->
 
         </div>
 
-     </footer>
+        <div class="footer__contrainers">
+
+            <!-- <ul>
+
+                <li>
+                    <a href="">
+                        <img class="footer__img" src="./images/cv.png" alt="CV">
+                    </a>
+
+                <li>
+                    <a href="www.github.com/rosaTome">
+                        <img class="footer__img" src="./images/github.png" alt="GitHub">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img class="footer__img" src="./images/linkedin.png" alt="Linkedin">
+                    </a>
+                </li>
+
+            </ul> -->
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
