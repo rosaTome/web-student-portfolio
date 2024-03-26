@@ -32,6 +32,7 @@ nav {
 
 section {
   grid-area: section;
+  background-color: yellow;
   color: black;
 }
 section .section__containers .section__heading--name {
@@ -72,6 +73,31 @@ article .article__containers .article__paragraph {
 figure {
   grid-area: figure;
   background-color: green;
+}
+figure .figure__containers {
+  display: flex;
+  justify-content: center;
+}
+figure .figure__containers .figure__heading {
+  font-size: 90px;
+  font-weight: bolder;
+}
+figure .figure__containers .figure__paragraph {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 40px;
+  margin: 0 80px 0 80px;
+}
+figure .figure__imgcontainer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  width: 100%;
+}
+figure .figure__imgcontainer .figure__img {
+  width: calc(26.33% - 10px);
+  height: auto;
 }
 
 aside {
