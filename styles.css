@@ -1,36 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
-  padding: 0;
+  padding: 30px;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  background-color: #fafafa;
+  color: #333;
 }
 
 body {
   display: grid;
-  grid-template-areas: "header header header header" "nav nav nav nav" "section section section section" "article article article article" "figure firgure figure figure" "aside aside aside aside" "footer footer footer footer";
+  grid-template-areas: "section section section section" "article article article article" "figure figure figure figure" "aside aside aside aside" "footer footer footer footer";
   gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 100vh;
+  width: 100%;
 }
 
 header {
+  display: none;
   grid-area: header;
   background-color: red;
 }
 
 nav {
+  display: none;
   grid-area: nav;
   background-color: orange;
 }
 
 section {
   grid-area: section;
-  background-color: yellow;
+  color: black;
+}
+section .section__containers .section__heading--name {
+  font-size: 50px;
+}
+section .section__containers .section__heading--role {
+  font-size: 200px;
+  font-weight: bolder;
+}
+section .section__containers .section__img {
+  display: none;
 }
 
 article {
   grid-area: article;
   background-color: lightgreen;
+}
+article .article__containers {
+  display: flex;
+  justify-content: center;
+}
+article .article__containers .article__img {
+  width: 90%; /* Set the image width to 100% of its container */
 }
 
 figure {
@@ -46,4 +70,15 @@ aside {
 footer {
   grid-area: footer;
   background-color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas: "header header header header" "nav nav nav nav" "section section section section" "article article article article" "figure firgure figure figure" "aside aside aside aside" "footer footer footer footer";
+    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
