@@ -1,0 +1,297 @@
+// variables scss
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-family: "Roboto", sans-serif;
+$primary-color: #000000;
+$secondary-color: #fafafa;
+
+// reset scss 
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box; 
+    font-family: $font-family;
+    font-size: 25px;
+    color: $primary-color;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    // Huge bug pops up on the right hand side of the page underneath the nav in inspect when using grid 
+
+    // display: grid;
+    // grid-template-areas:
+    //     "header header nav nav"
+    //     "section section section section"
+    //     "article article article article"
+    //     "figure figure figure figure"
+    //     "aside aside aside aside"
+    //     "footer footer footer footer"
+    //     ;
+    // gap: 10px;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    height: 100vh;
+    width: 100%;
+}
+
+// header scss
+header {
+    // grid-area: header;
+    display: inline-block;
+    padding-right: 1050px;
+    padding-left: 50px;
+
+    .header__heading {
+        font-size: 40px;
+    }
+}
+
+// nav scss
+nav {
+    // grid-area: nav;
+    display: inline-block;
+    padding-left: 300px;
+    padding-top: 50px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 100px;
+
+        li {
+            display: flex;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                text-decoration: none;
+                font-size: 40px;   
+                text-align: start;   
+                white-space: nowrap; 
+                float: right;
+            }
+
+            .button {
+                border: 3px solid black;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+      
+// section scss
+section {
+    // grid-area: section;
+    display: flex;
+    color: $primary-color;
+    align-items: center;
+
+    .section__containers {
+        display: flex;
+        flex-direction: column;
+        
+        .section__heading--name {
+            font-size: 50px;
+        }
+
+        .section__heading--role {
+            font-size: 200px;
+            font-weight: bolder;
+        }
+    }
+}
+
+// article scss
+.article {
+    // grid-area: article;
+    display: flex;
+    color: $primary-color;
+
+    .article__containers {
+        display: flex;
+        flex-direction: row;
+
+        .article__img {
+            max-width: 50%;
+        }
+
+        .article__heading {
+            font-size: 50px;
+        }
+
+        .article__paragraph {
+            flex-grow: 1;
+            margin-left: 20px; 
+            line-height: 1.8;
+            font-size: 50px;
+
+            span.article__header {
+                font-weight: bolder;
+                display: block; 
+                margin-bottom: 10px; 
+                font-size: 90px;
+
+            }
+        }
+    }
+}
+
+// figure scss
+figure {
+    // grid-area: figure;
+
+    .figure__containers {
+        display: flex;
+        justify-content: center;
+
+        .figure__heading {
+            font-size: 90px;
+            font-weight: bolder;
+        }
+
+        .figure__paragraph {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 50px;
+            margin: 0 80px 0 80px;
+        }
+    }
+
+    .figure__imgcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 100px;
+        width: 100%;
+
+        .figure__heading {
+            font-weight: bolder;
+        }
+
+        .figure__paragraph {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 50px;
+            width: 10px;
+        }
+    
+        .figure__img {
+            width: 150px;
+        }
+    }    
+}
+
+// figure scss
+figure {
+    // grid-area: figure;
+
+    .figure__containers {
+        display: flex;
+        justify-content: row;
+
+        .figure__heading {
+            font-size: 90px;
+            font-weight: bolder;
+        }
+
+        .figure__paragraph {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 50px;
+            margin: 0 80px 0 80px;
+        }
+    }  
+}
+
+// aside scss
+aside {
+    // grid-area: aside;
+
+    .aside__containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+
+        .aside__heading {
+            font-size: 90px;
+            font-weight: bolder;
+            text-align: center; 
+            margin-left: 1000px; 
+        }
+
+        .aside__card {
+            width: calc(33.33% - 20px); 
+            margin-bottom: 20px; 
+
+            .aside__skill {
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            .aside__title {
+                font-size: 70px;
+                font-weight: bolder;
+            }
+            .aside__paragraph{
+                line-height: 1.8;
+                font-size: 30px;
+            }
+            .aside__button {
+                border-radius: 15px;
+                margin: 25px 0px 0 25px;
+                width: 250px;
+                font-size: 35px;
+                border: 4px solid black;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+// footer scss
+footer {
+    // grid-area: footer;
+    background-color: $primary-color;
+
+    .footer__containers{
+        display: inline-block;
+
+        a {
+            color: $secondary-color; 
+            display: flex;
+            flex-direction: row;
+            padding-left: 50px;
+            font-size: 38px;
+            text-decoration: none;
+            margin-bottom: 100px;
+        }
+    }
+
+    .footer__imgcontainers {
+        display: inline-block;
+
+        ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+        padding-left: 1500px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+
+            li {
+                padding: 0px;
+                a {
+                    .footer__img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

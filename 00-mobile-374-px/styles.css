@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "section section section section" "article article article article" "figure figure figure figure" "aside aside aside aside" "footer footer footer footer";
+  gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: none;
+  grid-area: header;
+}
+
+nav {
+  display: none;
+  grid-area: nav;
+}
+
+section {
+  display: grid;
+  grid-area: section;
+  color: black;
+}
+section .section__containers .section__heading--name {
+  font-size: 50px;
+}
+section .section__containers .section__heading--role {
+  font-size: 200px;
+  font-weight: bolder;
+}
+section .section__containers .section__img {
+  display: none;
+}
+
+article {
+  grid-area: article;
+}
+article .article__containers .article__heading {
+  font-size: 90px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+article .article__containers .article__img {
+  width: 85%;
+  margin-left: 100px;
+}
+article .article__containers .article__paragraph {
+  width: 1000px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8;
+  font-size: 50px;
+}
+
+figure {
+  grid-area: figure;
+}
+figure .figure__containers {
+  display: flex;
+  justify-content: center;
+}
+figure .figure__containers .figure__heading {
+  font-size: 90px;
+  font-weight: bolder;
+}
+figure .figure__containers .figure__paragraph {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 50px;
+  margin: 0 80px 0 80px;
+}
+figure .figure__imgcontainer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  width: 100%;
+}
+figure .figure__imgcontainer .figure__img {
+  width: calc(26.33% - 10px);
+  height: 360px;
+}
+
+aside {
+  grid-area: aside;
+}
+aside .aside__containers .aside__heading {
+  font-size: 90px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+aside .aside__containers .aside__card .aside__skill {
+  font-size: 45px;
+  font-weight: bolder;
+}
+aside .aside__containers .aside__card .aside__title {
+  font-size: 90px;
+  font-weight: bolder;
+}
+aside .aside__containers .aside__card .aside__paragraph {
+  line-height: 1.8;
+  font-size: 50px;
+}
+aside .aside__containers .aside__card .aside__button {
+  border-radius: 15px;
+  margin: 25px 30px 0 25px;
+  width: 300px;
+  font-size: 45px;
+  border: 4px solid black;
+  font-weight: bolder;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000000;
+  color: #fafafa;
+  margin: -60px;
+}
+footer .footer__imgcontainers ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  margin-right: 80px;
+}
+footer .footer__imgcontainers ul li {
+  padding: 0px;
+}
+footer .footer__imgcontainers ul li a .footer__img {
+  width: 110%;
+}
+footer .footer__containers a {
+  display: flex;
+  flex-direction: row;
+  color: #fafafa;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 50px;
+  text-decoration: none;
+  margin-bottom: 100px;
+}/*# sourceMappingURL=styles.css.map */
