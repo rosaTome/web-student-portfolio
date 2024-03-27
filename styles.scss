@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $font-family: "Roboto", sans-serif;
-$primary-color: #333;
+$primary-color: #000000;
 $secondary-color: #fafafa;
 
 // reset scss 
@@ -14,7 +14,7 @@ $secondary-color: #fafafa;
     box-sizing: border-box;
     font-family: $font-family;
     font-size: 25px;
-    background-color: $secondary-color;
+    // background-color: $secondary-color;
     color: $primary-color;
 }
 
@@ -103,7 +103,6 @@ article {
             line-height: 1.8;
             font-size: 50px;
         }
-
     }
 }
 
@@ -160,25 +159,18 @@ aside {
         }
 
         .aside__card {
-
-            .aside__img {
-                
-            }
+            
             .aside__skill {
                 font-size: 45px;
                 font-weight: bolder;
-                    
             }
             .aside__title {
                 font-size: 90px;
                 font-weight: bolder;
-                
             }
             .aside__paragraph{
                 line-height: 1.8;
                 font-size: 50px;
-
-                
             }
             .aside__button {
                 border-radius: 15px;
@@ -187,8 +179,6 @@ aside {
                 font-size: 45px;
                 border: 4px solid black;
                 font-weight: bolder;
-        
-
             }
         }
     }
@@ -198,7 +188,46 @@ aside {
 
 footer {
     grid-area: footer;
-    background-color: blue;
+    background-color: $primary-color;
+    color: $secondary-color;
+    margin: -60px;
+
+    .footer__imgcontainers {
+        
+        ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        margin-right: 80px;
+
+            li {
+                padding: 0px;
+
+                a {
+        
+                    .footer__img {
+                        width: 110%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__containers{
+
+        a {
+            display: flex;
+            flex-direction: row;
+            color: $secondary-color;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 50px;
+            text-decoration: none;
+            margin-bottom: 100px;
+        }   
+    }
 }
 
 // media queries - laptop
