@@ -1,5 +1,4 @@
 // variables scss
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $font-family: "Roboto", sans-serif;
@@ -7,28 +6,40 @@ $primary-color: #000000;
 $secondary-color: #fafafa;
 
 // reset scss 
-
 * {
     margin: 0;
     padding: 10px;
     box-sizing: border-box; 
     font-family: $font-family;
     font-size: 25px;
-    // background-color: $secondary-color;
     color: $primary-color;
 }
 
 body {
     margin: 0;
     padding: 0;
+
+    // Huge bug pops up on the right hand side of the page underneath the nav in inspect when using grid 
+
+    // display: grid;
+    // grid-template-areas:
+    //     "header header nav nav"
+    //     "section section section section"
+    //     "article article article article"
+    //     "figure figure figure figure"
+    //     "aside aside aside aside"
+    //     "footer footer footer footer"
+    //     ;
+    // gap: 10px;
+    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
     height: 100vh;
     width: 100%;
 }
 
-
 // header scss
-
 header {
+    // grid-area: header;
     display: inline-block;
     padding-right: 1050px;
     padding-left: 50px;
@@ -39,14 +50,11 @@ header {
 }
 
 // nav scss
-
 nav {
+    // grid-area: nav;
     display: inline-block;
     padding-left: 300px;
     padding-top: 50px;
-
-
-
 
     ul {
         list-style: none;
@@ -54,7 +62,6 @@ nav {
         flex-direction: row;
         justify-content: flex-end;
         padding-left: 100px;
-
 
         li {
             display: flex;
@@ -77,8 +84,10 @@ nav {
         }
     }
 }
-        
+      
+// section scss
 section {
+    // grid-area: section;
     display: flex;
     color: $primary-color;
     align-items: center;
@@ -98,13 +107,15 @@ section {
     }
 }
 
+// article scss
 .article {
+    // grid-area: article;
     display: flex;
     color: $primary-color;
 
     .article__containers {
         display: flex;
-        flex-direction: row; // Ensure items are displayed in a row
+        flex-direction: row;
 
         .article__img {
             max-width: 50%;
@@ -132,9 +143,8 @@ section {
 }
 
 // figure scss
-
 figure {
-    grid-area: figure;
+    // grid-area: figure;
 
     .figure__containers {
         display: flex;
@@ -164,7 +174,6 @@ figure {
             font-weight: bolder;
         }
 
-
         .figure__paragraph {
             text-align: center;
             line-height: 1.8;
@@ -179,14 +188,12 @@ figure {
 }
 
 // figure scss
-
 figure {
-    grid-area: figure;
+    // grid-area: figure;
 
     .figure__containers {
         display: flex;
         justify-content: row;
-
 
         .figure__heading {
             font-size: 90px;
@@ -203,8 +210,8 @@ figure {
 }
 
 // aside scss
-
 aside {
+    // grid-area: aside;
 
     .aside__containers {
         display: flex;
@@ -247,15 +254,15 @@ aside {
 }
 
 // footer scss
-
 footer {
+    // grid-area: footer;
     background-color: $primary-color;
 
     .footer__containers{
         display: inline-block;
 
         a {
-            color: white; 
+            color: $secondary-color; 
             display: flex;
             flex-direction: row;
             padding-left: 50px;
@@ -263,7 +270,6 @@ footer {
             text-decoration: none;
             margin-bottom: 100px;
         }
-        
     }
 
     .footer__imgcontainers {
@@ -288,7 +294,4 @@ footer {
             }
         }
     }
-
 }
-
-

@@ -98,9 +98,6 @@ section .section__containers .section__heading--role {
   font-size: 90px;
 }
 
-figure {
-  grid-area: figure;
-}
 figure .figure__containers {
   display: flex;
   justify-content: center;
@@ -135,9 +132,6 @@ figure .figure__imgcontainer .figure__img {
   width: 150px;
 }
 
-figure {
-  grid-area: figure;
-}
 figure .figure__containers {
   display: flex;
   justify-content: row;
@@ -196,7 +190,7 @@ footer .footer__containers {
   display: inline-block;
 }
 footer .footer__containers a {
-  color: white;
+  color: #fafafa;
   display: flex;
   flex-direction: row;
   padding-left: 50px;
