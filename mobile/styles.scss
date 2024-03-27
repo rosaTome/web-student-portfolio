@@ -11,14 +11,16 @@ $secondary-color: #fafafa;
 * {
     margin: 0;
     padding: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: $font-family;
     font-size: 25px;
-    // background-color: $secondary-color;
+    background-color: $secondary-color;
     color: $primary-color;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-areas:
         "section section section section"
@@ -38,7 +40,6 @@ body {
 header {
     display: none;
     grid-area: header;
-    background-color: red;
 }
 
 // nav scss
@@ -46,14 +47,13 @@ header {
 nav {
     display: none;
     grid-area: nav;
-    background-color: orange;
 }
 
 // section scss 
 
 section {
+    display: grid;
     grid-area: section;
-    background-color: yellow;
     color: black;
 
     .section__containers {
@@ -78,7 +78,6 @@ section {
 
 article {
     grid-area: article;
-    background-color: lightgreen;
 
     .article__containers {
 
@@ -91,7 +90,7 @@ article {
 
         .article__img {
             width: 85%; 
-            margin-left: 80px;
+            // margin-left: 80px;
         }
 
         .article__paragraph {
@@ -110,7 +109,6 @@ article {
 
 figure {
     grid-area: figure;
-    background-color: green;
 
     .figure__containers {
         display: flex;
@@ -137,8 +135,8 @@ figure {
         width: 100%;
     
         .figure__img {
-        width: calc(26.33% - 10px);
-        height: 360px;
+            width: calc(26.33% - 10px);
+            height: 360px;
         }
     }    
 }
@@ -147,7 +145,6 @@ figure {
 
 aside {
     grid-area: aside;
-    background-color: lightblue;
 
     .aside__containers {
 
@@ -229,85 +226,3 @@ footer {
         }   
     }
 }
-
-// media queries - laptop
-
-@media screen and (min-width: 1024px){
-    body {
-        display: grid;
-        grid-template-areas:
-            "header nav nav nav"
-            "section section section section"
-            "article article article article"
-            "figure figure figure figure"
-            "aside aside aside aside"
-            "footer footer footer footer"
-        ;
-        gap: 10px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        height: 100vh;
-        width: 100%;
-    }
-
-    header {
-        display: inline-block;
-        grid-area: header;
-        background-color: red;
-
-        .header__heading {
-            font-size: 40px;
-        }
-
-    }
-    
-    nav {
-        display: flex;
-        grid-area: nav;
-        background-color: orange;
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-
-            li {
-                display: flex;
-
-                a {
-                    display: flex;
-                    text-decoration: none;
-                    font-size: 20px;   
-                    text-align: start;   
-                    white-space: nowrap; 
-                }
-
-                .button {
-                    border: 3px solid black;
-                    border-radius: 15px;
-                }
-            }
-
-        }
-        
-    }
-
-    section {
-        display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: row;
-
-        .section__containers {
-             .section__img {
-            display: inline-block;
-        }
-
-
-        }
-
-    
-
-    }
-
-
-}
-    

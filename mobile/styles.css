@@ -5,10 +5,13 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+  background-color: #fafafa;
   color: #000000;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-areas: "section section section section" "article article article article" "figure figure figure figure" "aside aside aside aside" "footer footer footer footer";
   gap: 10px;
@@ -20,18 +23,16 @@ body {
 header {
   display: none;
   grid-area: header;
-  background-color: red;
 }
 
 nav {
   display: none;
   grid-area: nav;
-  background-color: orange;
 }
 
 section {
+  display: grid;
   grid-area: section;
-  background-color: yellow;
   color: black;
 }
 section .section__containers .section__heading--name {
@@ -47,7 +48,6 @@ section .section__containers .section__img {
 
 article {
   grid-area: article;
-  background-color: lightgreen;
 }
 article .article__containers .article__heading {
   font-size: 90px;
@@ -57,7 +57,6 @@ article .article__containers .article__heading {
 }
 article .article__containers .article__img {
   width: 85%;
-  margin-left: 80px;
 }
 article .article__containers .article__paragraph {
   width: 1000px;
@@ -71,7 +70,6 @@ article .article__containers .article__paragraph {
 
 figure {
   grid-area: figure;
-  background-color: green;
 }
 figure .figure__containers {
   display: flex;
@@ -101,7 +99,6 @@ figure .figure__imgcontainer .figure__img {
 
 aside {
   grid-area: aside;
-  background-color: lightblue;
 }
 aside .aside__containers .aside__heading {
   font-size: 90px;
@@ -159,53 +156,4 @@ footer .footer__containers a {
   font-size: 50px;
   text-decoration: none;
   margin-bottom: 100px;
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    display: grid;
-    grid-template-areas: "header nav nav nav" "section section section section" "article article article article" "figure figure figure figure" "aside aside aside aside" "footer footer footer footer";
-    gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 100vh;
-    width: 100%;
-  }
-  header {
-    display: inline-block;
-    grid-area: header;
-    background-color: red;
-  }
-  header .header__heading {
-    font-size: 40px;
-  }
-  nav {
-    display: flex;
-    grid-area: nav;
-    background-color: orange;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-  nav ul li {
-    display: flex;
-  }
-  nav ul li a {
-    display: flex;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: start;
-    white-space: nowrap;
-  }
-  nav ul li .button {
-    border: 3px solid black;
-    border-radius: 15px;
-  }
-  section {
-    display: flex;
-  }
-  section .section__containers .section__img {
-    display: inline-block;
-  }
 }/*# sourceMappingURL=styles.css.map */
