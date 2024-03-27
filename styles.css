@@ -85,7 +85,7 @@ figure .figure__containers .figure__heading {
 figure .figure__containers .figure__paragraph {
   text-align: center;
   line-height: 1.8;
-  font-size: 40px;
+  font-size: 50px;
   margin: 0 80px 0 80px;
 }
 figure .figure__imgcontainer {
@@ -97,12 +97,38 @@ figure .figure__imgcontainer {
 }
 figure .figure__imgcontainer .figure__img {
   width: calc(26.33% - 10px);
-  height: auto;
+  height: 360px;
 }
 
 aside {
   grid-area: aside;
   background-color: lightblue;
+}
+aside .aside__containers .aside__heading {
+  font-size: 90px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+aside .aside__containers .aside__card .aside__skill {
+  font-size: 45px;
+  font-weight: bolder;
+}
+aside .aside__containers .aside__card .aside__title {
+  font-size: 90px;
+  font-weight: bolder;
+}
+aside .aside__containers .aside__card .aside__paragraph {
+  line-height: 1.8;
+  font-size: 50px;
+}
+aside .aside__containers .aside__card .aside__button {
+  border-radius: 15px;
+  margin: 25px 30px 0 25px;
+  width: 300px;
+  font-size: 45px;
+  border: 4px solid black;
+  font-weight: bolder;
 }
 
 footer {
