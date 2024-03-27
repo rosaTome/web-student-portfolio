@@ -40,10 +40,10 @@ body {
 // header scss
 
 header {
-    display: grid;
-    grid-area: header;
-    display: block;
-    grid-area: header;
+    display: inline-block;
+    padding-right: 1050px;
+    padding-left: 50px;
+
 
     .header__heading {
         font-size: 40px;
@@ -54,8 +54,12 @@ header {
 // nav scss
 
 nav {
-display: block;
-grid-area: nav;
+    display: inline-block;
+    padding-left: 300px;
+    padding-top: 50px;
+
+
+
 
     ul {
         list-style: none;
@@ -64,11 +68,14 @@ grid-area: nav;
         justify-content: flex-end;
         padding-left: 100px;
 
+
         li {
             display: flex;
 
             a {
                 display: flex;
+                flex-direction: row;
+                align-items: flex-start;
                 text-decoration: none;
                 font-size: 40px;   
                 text-align: start;   
