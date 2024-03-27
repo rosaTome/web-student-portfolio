@@ -227,6 +227,27 @@ aside {
         .aside__card {
             width: calc(33.33% - 20px); 
             margin-bottom: 20px; 
+
+            .aside__skill {
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            .aside__title {
+                font-size: 70px;
+                font-weight: bolder;
+            }
+            .aside__paragraph{
+                line-height: 1.8;
+                font-size: 30px;
+            }
+            .aside__button {
+                border-radius: 15px;
+                margin: 25px 0px 0 25px;
+                width: 250px;
+                font-size: 35px;
+                border: 4px solid black;
+                font-weight: bolder;
+            }
         }
     }
 }
